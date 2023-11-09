@@ -1,6 +1,13 @@
 from financial_economics import volume
 from financial_economics import article
 import csv
+import review_of_financial_studies.volume as volume
+
+
+# 生成 review_of_financial_studies.csv 文件
+volume.process_all_journals(1, 36)
+
+
 
 # 使用函数获取结果
 bare_href = "https://www.sciencedirect.com"
